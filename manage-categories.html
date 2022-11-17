@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Application</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        icons
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnZSNTV6YzVOVXRsa3ZxMkg4OWVEVl8tdk5td3xBQ3Jtc0tuYllfY2NXQmY2eTJhUUZMVGxxa0xxNXZGLUFUWTNuUGZwbVRLNjBnRjlEY05ROVhKc0xkaFd2UjRicmo4Z2lfeVlieF96QlNUb0tsR0ZpcExGLXZJUFNyZjltNjlRU3hMM0pWS1JwTlp0UXpWNUN1UQ&q=https%3A%2F%2Funicons.iconscout.com%2Frelease%2Fv4.0.0%2Fcss%2Fline.css&v=dgfHwfC6bWE">
+    <link rel="stylesheet" href="css/icons.css">
+
+</head>
+
+<body>
+
+    <!--navabar-->
+    <nav>
+        <div class="container container__navbar">
+
+            <a href="index.html" class="nav__logo">BLOGS</a>
+            <ul class="nav__items">
+
+
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!---------- <li><a href="signin">Signin</a></li>-->
+
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg" alt="">
+                    </div>
+                    <ul>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="fa-sharp fa-solid fa-bars"></i></button>
+            <button id="close__nav-btn"><i class="fa-solid fa-xmark"></i></button>
+
+        </div>
+    </nav>
+
+
+
+    <section class="dashboard">
+        <div class="container dashboard__container">
+            <button id="show__sidebar-btn" class="sidebar__toggle"><i class="fa-solid fa-chevron-right"></i></button>
+            <button id="hide__sidebar-btn" class="sidebar__toggle"><i class="fa-solid fa-chevron-left"></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="Add-post.html"><i class="fa-solid fa-pen"></i>
+                            <h5>Add post </h5>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html"><i class="fa-solid fa-bars-progress"></i>
+                            <h5>manage post </h5>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Add-user.html"><i class="fa-solid fa-user-plus"></i>
+                            <h5> Add user </h5>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="manage-user.html" ><i class="fa-solid fa-users"></i>
+                            <h5>manage user </h5>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="add-category.html"><i class="fa-solid fa-circle-plus"></i>
+                            <h5>Add category</h5>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="manage-categories.html" class="active"><i class="fa-solid fa-bars-progress"></i>
+                            <h5>manage categories </h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <h2>manage categories</h2>
+                <table>
+                    <thead>
+                    
+                        <tr>
+                            <th>Title</th>
+                            <th>Edit</th>
+                            <th> Delete</th>
+
+                        </tr>
+                    </thead>
+
+
+                    <tbody>                 
+                    <tr>
+                        <td>Travel</td>
+                        <td> <a href="edit-category.html" class="btn sm">Edit</a></td>
+                        <td> <a href="Delete-category.html" class="btn sm danger">Delete</a></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> Wild Life</td>
+                        <td> <a href="edit- usercategory.html" class="btn sm">Edit</a></td>
+                        <td> <a href="Delete-category.html" class="btn sm danger">Delete</a></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Music</td>
+                        <td> <a href="edit-category.html" class="btn sm">Edit</a></td>
+                        <td> <a href="Delete-category.html" class="btn sm danger">Delete</a></td>
+                    </tr>
+                </tbody>
+                </table>
+            </main>
+        </div>
+    </section>
+    <footer>
+
+        <div class="footer__socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h2> Catagories</h2>
+                <ul>
+                    <li><a href=""> Art</a></li>
+                    <li><a href=""> Wild Life</a></li>
+                    <li><a href=""> Travel</a></li>
+                    <li><a href=""> Music</a></li>
+                    <li><a href=""> Science & Techonolgy </a> </li>
+
+                </ul>
+            </article>
+            <article>
+                <h2>Support</h2>
+                <ul>
+                    <li><a href=""> Online support</a></li>
+                    <li><a href=""> Call Numbers</a></li>
+                    <li><a href=""> Emails</a></li>
+                    <li><a href=""> Social support</a></li>
+                    <li><a href=""> Location </a> </li>
+
+                </ul>
+            </article>
+            <article>
+                <h2> Blog</h2>
+                <ul>
+                    <li><a href="">Safety </a></li>
+                    <li><a href="">Repair</a></li>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Popular</a></li>
+                    <li><a href="">Catagories </a> </li>
+
+                </ul>
+            </article>
+            <article>
+                <h2> Permalinks</h2>
+                <ul>
+                    <li><a href=""> Home</a></li>
+                    <li><a href=""> Blog</a></li>
+                    <li><a href=""> About</a></li>
+                    <li><a href=""> Services</a></li>
+                    <li><a href=""> Contact </a> </li>
+
+                </ul>
+            </article>
+        </div>
+        <!----------------copyright------------->
+        <div class="footer__copyright">
+            <small>
+                copyright &copy; Blog Sep.2022
+            </small>
+        </div>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
